@@ -10,11 +10,11 @@
     "preinstall": "npx npm-force-resolutions",
     "dev": "run-p bundle:*",
     "bundle:eleventy": "eleventy --serve",
-    "bundle:parcel": "parcel watch src/images/**/* src/app.scss src/app/**/*.js",
+    "bundle:parcel": "parcel watch src/images/**/* src/app.scss src/index.js",
     "parcel": "parcel src/index.html --port=3232",
     "build": "run-s clean prod:*",
     "prod:eleventy": "eleventy",
-    "prod:parcel": "parcel build --no-source-maps src/images/**/* src/**/*.scss src/app/**/*.js",
+    "prod:parcel": "parcel build --no-source-maps src/images/**/* src/app.scss src/index.js",
     "clean": "rimraf .cache dist"
   },
   "resolutions": {
