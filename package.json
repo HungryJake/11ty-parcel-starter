@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "dev": "run-p bundle:*",
+    "start": "run-p bundle:*",
     "bundle:eleventy": "eleventy --serve",
     "bundle:parcel": "parcel watch src/images/**/* src/app.scss src/index.js",
     "parcel": "parcel src/index.html --port=3232",

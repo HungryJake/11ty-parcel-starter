@@ -6,6 +6,6 @@ module.exports = function (eleventyConfig) {
       input: 'src',
       output: 'dist'
     },
-    templateFormats: ['html', 'md', 'njk']
+    templateFormats: ['html', 'md', 'ejs']
   };
 };
